@@ -1,46 +1,52 @@
 body{
-	margin: 0px;
-	padding: 0px;
+	padding: 	0px;
+	margin: 	0px;
+
+}
+.santa{
+padding-top: 25px;
+	width: 	100%;
+	min-height: 	125px;
+	background-color: 	blue;
+}
+.santa > .icon{
+	width: 100px;
+	height: 100px;
+	background-color: purple;
+	margin: auto;
 }
 .content{
-	width:100%;
-	min-height: 500px;
-	background-color: black; 
+	width: 	calc(100% - 150px);
+	min-height: 	500px;
+	background-color: 	black;
+	padding-left: 75px;
+	padding-right: 75px;
 }
-.lmenu{
-	float: left;
-	width: 200px;
-	background-color:blue;
-	height: 100%;
-}
-.main{
-	float: left;
-	width: calc(100% - 200px);
-	background-color:red;
-	min-height: 500px;
-}
-.page{
-	width: 100%;
-	text-align: center;
-	display: block;
-}
-ul.menu{
-	padding: 0px;
-}
-ul.menu > li.page{
-	margin-left: -15px;
-	padding-top: 25px;
-	color: white;
-}
-div.logo{
-	margin-left: 20px;
-	width: 150px;
-	height: 70px;
-	background-color: purple;
-}
-img.link_icon{
-	width: 32px;
-	height: 32px;
-	margin-right: 10px;
+.content > .header{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	width: 	100%
+	height: 150px;
+	background-color: 	red;
 }
 
+.content > .header > .link{
+
+	width: 150px;
+	height: 75px;
+}
+.main{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	
+	align-items: center;
+	justify-content: center;
+}
+.main > .item{
+	width: 300px;
+	height: 200px;
+	margin: 5px;
+	background-color: white;
+}
