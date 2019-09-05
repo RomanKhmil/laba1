@@ -1,12 +1,11 @@
 body{
 	padding: 	0px;
 	margin: 	0px;
-
 }
 .santa{
-padding-top: 25px;
+padding-top: 150px;
 	width: 	100%;
-	min-height: 	125px;
+	min-height: calc(400px - 150px);
 	background-color: 	blue;
 }
 .santa > .icon{
@@ -25,28 +24,21 @@ padding-top: 25px;
 .content > .header{
 	align-items: center;
 	justify-content: center;
+	border-top: 5px solid purple;
 	display: flex;
 	width: 	100%
 	height: 150px;
 	background-color: 	red;
+	margin-bottom: 35px;
 }
-
+/* links */
 .content > .header > .link{
 
-	width: 150px;
-	height: 75px;
+	width: 15%;
+	height: 150px;
 }
-.main{
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	
-	align-items: center;
-	justify-content: center;
+.content > .header > .user{
+	width: 15%;
+	height: 150px;
 }
-.main > .item{
-	width: 300px;
-	height: 200px;
-	margin: 5px;
-	background-color: white;
-}
+/*       */
