@@ -144,6 +144,7 @@
 }
 #second_line > .col:nth-child(2) > .row:nth-child(2) > .col:nth-child(2) > .row:nth-child(2){
 	height: 50%;
+	margin-bottom: 35px;
 }
 #second_line > .col:nth-child(2) > .row:nth-child(2) > .col:nth-child(2) > .row:nth-child(3){
 	height: 12%;
