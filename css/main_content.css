@@ -8,7 +8,7 @@
 }
 /* first line  */
 #first_line{
-	height: 700px;
+	height: 1000px;
 	width: 100%;
 	background-color: orange;
 	display: flex;
@@ -62,7 +62,7 @@
 
 /* second line */
 #second_line{
-	height: 1000px;
+	height: 1500px;
 	width: 100%;
 	background-color: cyan;
 	display: flex;
@@ -82,15 +82,19 @@
 }
 #second_line > .col:nth-child(1) > .row{
 	width:100%;
-	height: 30%;
 	background-color: white;
 }
 #second_line > .col:nth-child(1) > .row:nth-child(1){
 	margin-bottom: 35px;
+	height: 20%;
 	margin-top: 35px
+}
+#second_line > .col:nth-child(1) > .row:nth-child(3){
+	height: 30%;
 }
 #second_line > .col:nth-child(1) > .row:nth-child(2){
 	margin-bottom: 35px;
+	height: 45%;
 }
 #second_line > .col:nth-child(2) > .row:nth-child(1){
 	height: 25%;
@@ -118,6 +122,12 @@
 }
 
 
+
+
+
+
+
+
 	#second_line > .col:nth-child(2) > .row:nth-child(2) > .col:nth-child(1) > .row:nth-child(1){
 		height: 33%;
 		margin-bottom: 35px;
@@ -134,16 +144,26 @@
 		height: 13%;
 	}
 
+
+
+
 #second_line > .col:nth-child(2) > .row:nth-child(2) > .col:nth-child(2) > .row{
 	background-color: white;
 }
+
+
+
+
+
+
+
 
 #second_line > .col:nth-child(2) > .row:nth-child(2) > .col:nth-child(2) > .row:nth-child(1){
 	height: 38%;
 	margin-bottom: 35px;
 }
 #second_line > .col:nth-child(2) > .row:nth-child(2) > .col:nth-child(2) > .row:nth-child(2){
-	height: 50%;
+	height: 45%;
 	margin-bottom: 35px;
 }
 #second_line > .col:nth-child(2) > .row:nth-child(2) > .col:nth-child(2) > .row:nth-child(3){
