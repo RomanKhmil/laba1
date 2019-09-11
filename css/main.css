@@ -1,0 +1,1 @@
+body{background:black;margin:0;padding:0}.lmenu{float:left;-webkit-transition-duration:0.6s;-o-transition-duration:0.6s;transition-duration:0.6s;-webkit-transition-property:width;-o-transition-property:width;transition-property:width;height:1000px;background-color:blue;width:300px}.content{float:left;height:1000px;background-color:red;width:calc(100% - 300px)}

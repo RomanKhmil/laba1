@@ -1,0 +1,106 @@
+$link_hei: 50px;
+$key_btn: 50px;
+
+$menu_link_res: 64px;
+
+@mixin deform ($time, $parameter) {
+	transition-duration: $time;
+	transition-property: $parameter;
+}
+
+@mixin flexible () {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin list_hiden () {
+	height: $key_bth;
+	ul {
+		display: none;
+	}
+}
+div.lmenu_closed {
+	width: 0px;
+}
+
+.list_open {
+	height: $link_hei*9;
+}
+.list_open_more {
+	height: $link_hei*5;
+}
+.list_closed {
+
+	margin: 0;
+	height: 0;
+	li {
+		display: none;
+	}
+	display: hidden;
+}
+
+
+
+
+#abs_menu_link {
+	display: none;
+	position: absolute;
+	width: $menu_link_res;
+	height: $menu_link_res;
+}
+.shwlist {
+	width: 100%;
+	background-color: white;
+	min-height: $link_hei;
+}
+#main_menu {
+	div.key_bth {
+		height: $key_btn;
+		&:active {
+			color: red;
+		}
+	}
+	ul {
+		overflow: hidden;
+		@include deform (0.6s, height) ;
+		li {
+			height: $link_hei;
+		}
+	}
+}
+#more_menu {
+	div.key_bth {
+		height: $key_btn;
+		&:active {
+			color: red;
+		}
+	}
+	ul {
+
+		overflow: hidden;
+		@include deform (0.6s, height) ;
+		li {
+			height: $link_hei;
+		}
+	}
+}
+
+#user {
+	@include flexible () ;
+	height: 100px;
+	width: 100%;
+	background-color: orange;
+	#user_icon {
+		height: 75px;
+		width: 75px;
+		border-radius: 40px;
+		background-color: red;
+	}
+	#user_name{
+		margin-left: 20px; 
+		width: 100px;
+		height: 100%;
+		background-color: white;
+	}
+}
