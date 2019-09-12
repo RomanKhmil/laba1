@@ -1,0 +1,31 @@
+@mixin flexible () {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@mixin five () {
+	height: 1000px;
+}
+
+body {
+	background: black;
+	margin: 0;
+	padding: 0;
+}
+.page {
+	//@include flexible();
+}
+.lmenu {
+	float: left;
+	transition-duration: 0.6s;
+	transition-property: width;
+	@include five();
+	background-color: blue;
+	width: 300px;
+}
+.content{
+	float: left;
+	@include five();
+	background-color: red;
+	width: calc(100% - 300px);
+}
