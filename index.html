@@ -2,17 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/op.css">
-	<link rel="stylesheet" href="css/main_content.css">
-	
-
+	<!-- Main addons -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+			
+		</script>
 
 	<!---  Addons        -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
-	
-	<link rel="stylesheet" type="text/css" href="addons/Loading/loading-bar.css"/>
-	<script type="text/javascript" src="addons/Loading/loading-bar.js"></script>
-	<link rel="stylesheet" href="css/addonsOP.css">
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+		<script src="elements/progressbar/js/jquery.classyloader.js"></script>
+		
 	<title>	</title>
 
 	<title>Document</title>
@@ -66,10 +64,45 @@
 				</ul>
 			</div>
 		</div>
-		<div class="content">
-			
+		<div id="content">
+			<div class="row">search</div>
+			<div class="row">
+				<div id="project_activity">
+					<div class="title_bar">
+						<span>Project Activity</span>
+
+					</div>
+					<div class="button_bar">
+						
+					</div>
+					<div class="graph_bar">
+						<canvas id="myChart"></canvas>
+					</div>
+				</div>
+			</div>
+			<div class="row"></div>
+			<div class="row">
+				<div class="col" id = "visits_bar">
+					<div class="title_bar">
+						<span>Visits</span>
+					</div>
+					<div class="button_bar">
+						
+					</div>
+					<div id="progress_bar">
+						<div class="progress"><canvas id="loader"></canvas></div>
+						<div class="progress"></div>
+						<div class="progress"></div>
+					</div>
+				</div>
+				<div class="col" id="messages_bar"></div>
+			</div>
+			<div class="row"></div>
+			<div class="row"></div>
 		</div>
 	</div>
+	<script src="js/progress.js"></script>
+	<script src="js/graph.js"></script>
 	<script src="js/lmenu.js"></script>
 </body>
 </html>

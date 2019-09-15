@@ -94,7 +94,7 @@
                     ctx.font = settings.fontSize + " " + settings.fontFamily;
                     ctx.textAlign = "center";
                     ctx.textBaseline = "middle";
-                    ctx.fillText(a + 1 + "%", hw, hh);
+                    ctx.fillText(a + 1 + "", hw, hh);
                 }
             };
             setTimeout(function c() {

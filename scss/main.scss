@@ -23,7 +23,7 @@ body {
 	background-color: blue;
 	width: 300px;
 }
-.content{
+#content{
 	float: left;
 	@include five();
 	background-color: red;
