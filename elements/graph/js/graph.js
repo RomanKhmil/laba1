@@ -58,7 +58,13 @@ var myChart = new Chart(ctx, {
         
     },
     options: {
+        legend: {
+        display: false
+    },
     scales: {
+        ticks: {
+            display: false
+         },
         // The following will affect the vertical lines (xAxe) of your dataset
         xAxes: [{
             gridLines: {
