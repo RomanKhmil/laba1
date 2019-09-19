@@ -80,7 +80,15 @@
 					</div>
 				</div>
 			</div>
-			<div class="row"></div>
+			<div class="row">
+				<div id="involved_team">
+					
+				</div>
+				<div class="mangers_activity">
+					<canvas id="secondChart" ></canvas>
+				</div>
+
+			</div>
 			<div class="row">
 				<div class="col" id = "visits_bar">
 					<div class="title_bar">
@@ -90,9 +98,21 @@
 						
 					</div>
 					<div id="progress_bar">
-						<div class="progress"><canvas id="loader"></canvas></div>
-						<div class="progress"></div>
-						<div class="progress"></div>
+						<div class="progress">
+							<canvas id="loader">
+							
+							</canvas>
+						</div>
+						<div class="progress">
+							<canvas id="loaderr">
+							
+							</canvas>
+						</div>
+						<div class="progress">
+							<canvas id="loaderrr">
+							
+							</canvas>
+						</div>
 					</div>
 				</div>
 				<div class="col" id="messages_bar"></div>
@@ -101,8 +121,9 @@
 			<div class="row"></div>
 		</div>
 	</div>
-	<script src="js/progress.js"></script>
+	
 	<script src="js/graph.js"></script>
 	<script src="js/lmenu.js"></script>
+	<script src="js/progress.js"></script>
 </body>
 </html>

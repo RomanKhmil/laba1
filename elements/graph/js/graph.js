@@ -58,33 +58,28 @@ var myChart = new Chart(ctx, {
         
     },
     options: {
-        legend: {
-        display: false
-    },
-    scales: {
-        ticks: {
+        title: {
             display: false
-         },
-        // The following will affect the vertical lines (xAxe) of your dataset
-        xAxes: [{
-            gridLines: {
-                // You can change the color, the dash effect, the main axe color, etc.
-                borderDash: [8, 4],
-                lineWidth: 3,
-                color: "rgba(0,255,255, 1)"
-
-           }
-        }],
-
-        // And this will affect the horizontal lines (yAxe) of your dataset
-        yAxes: [{
-            gridLines: {
-                borderDash: [10, 5],
-                color: "rgba(0,255,255, 1)"
-            }
-        }]
+        },
+        lagends: {
+            display: false
+        },
+        scales: {
+            xAxes: [{
+                gridLines: {
+                    color : 'rgba(0,0,0,1)',
+                    lineWidth: 4,
+                    //drawOnChartArea: false
+                }
+            }],
+            yAxes: [{
+                gridLines: {
+                    color : 'rgba(155,255,255,1',
+                    lineWidth: 4
+                }
+            }]
+        }
     }
-}
     
 });
 var secondChart = new Chart(sctx,{

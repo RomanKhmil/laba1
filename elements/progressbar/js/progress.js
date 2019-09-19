@@ -1,4 +1,5 @@
 
+//color of first progress bar
 var ctx = document.getElementById('loader').getContext("2d");
 
 	var gradientFill = ctx.createLinearGradient(0, 250,  0,100);
@@ -6,14 +7,14 @@ var ctx = document.getElementById('loader').getContext("2d");
 		gradientFill.addColorStop(1, "rgba(88, 202, 74, 1)");
 
 
-
+//color of second progress bar
 var ctxx = document.getElementById('loaderr').getContext("2d");
 
 	var gradientFilll = ctxx.createLinearGradient(0, 250,  0,100);
 
 	gradientFilll.addColorStop(0, "rgba(254, 5, 135, 1)");
 	gradientFilll.addColorStop(1, "rgba(255, 158, 8, 1)");
-
+//color of third progress bar
 var ctxxx = document.getElementById('loaderrr').getContext("2d");
 
 	var gradientFillll = ctxxx.createLinearGradient(0, 250,  0,100);
@@ -55,7 +56,14 @@ $(document).ready(function() {
 
 		remainingLineColor:'rgba(55, 55, 55, 0.4)',// line color of the remaining percentage (if showRemaining is true)
 
-		lineWidth: 25// the width of the circle line in pixels
+		lineWidth: 25,// the width of the circle line in pixels
+		
+
+
+		info_text: "Hello",
+		remove_percentage: true,
+		max_point: 10000,
+		current_point: 5000
 	});
 	$('#loaderr').ClassyLoader({
 		width: 400,// width of the loader in pixels
@@ -88,7 +96,8 @@ $(document).ready(function() {
 
 		remainingLineColor:'rgba(55, 55, 55, 0.1)',// line color of the remaining percentage (if showRemaining is true)
 
-		lineWidth: 35// the width of the circle line in pixels
+		lineWidth: 35,// the width of the circle line in pixels
+		info_text: "world"
 	});
 
 	$('#loaderrr').ClassyLoader({
@@ -123,7 +132,8 @@ $(document).ready(function() {
 
 		remainingLineColor:'rgba(55, 55, 55, 0.4)',// line color of the remaining percentage (if showRemaining is true)
 
-		lineWidth: 25// the width of the circle line in pixels
+		lineWidth: 25,// the width of the circle line in pixels
+		info_text: ":)"
 	});
 
 });

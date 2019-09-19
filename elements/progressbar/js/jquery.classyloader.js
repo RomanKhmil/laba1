@@ -30,8 +30,21 @@
             lineColor: 'rgba(55, 55, 55, 1)',
             remainingLineColor: 'rgba(55, 55, 55, 0.4)',
             lineWidth: 5,
+
+            //My modification
+            info_text: 'hello',
+            info_font: 'Helvetica',
+            info_font_size: '35px',
+            info_font_color: 'rgba(125, 125, 125, 0.6)',
+
+
+            remove_percantage: false,
+            max_point: 0,
+            current_point: 0,
+            //------------------
             start: 'left'
         };
+       
         settings = $.extend({
         }, defaultSettings, settings);
         var r = $(this);
@@ -43,6 +56,9 @@
             var hw = r.width() / 2;
             var hh = r.height() / 2;
             var u = 100;
+            if(settings.remove_percantage){
+                u = settings.max_point;
+            }
             var a = 0;
             var startPos = 0;
             var f = function(e) {
@@ -93,8 +109,16 @@
                     ctx.fillStyle = settings.fontColor;
                     ctx.font = settings.fontSize + " " + settings.fontFamily;
                     ctx.textAlign = "center";
-                    ctx.textBaseline = "middle";
+                    //percantage font 
+                    ctx.textBaseline = "top";
                     ctx.fillText(a + 1 + "", hw, hh);
+
+
+                    ctx.fillStyle = settings.info_font_color;
+                    ctx.font = settings.info_font_size + ' ' + settings.info_font;
+                    ctx.textBaseline = 'bottom';
+                    ctx.fillText(settings.info_text, hw, hh);
+
                 }
             };
             setTimeout(function c() {
