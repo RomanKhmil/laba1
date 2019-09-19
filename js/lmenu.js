@@ -4,19 +4,23 @@ var more_menu_open = true;
 var menu_open = true;
 //
 var key_btn = 50;
-var main_btn = document.getElementById("main_menu_button");
-var main_menu = document.getElementById("main_menu");
-var main_menu_content = main_menu.children;
+	var main_btn = document.getElementById("main_menu_button");
+	var main_menu = document.getElementById("main_menu");
+	var main_menu_content = main_menu.children;
 
-var more_btn = document.getElementById("more_menu_button");
-var more_menu = document.getElementById("more_menu");
-var more_menu_content = more_menu.children;
+	var more_btn = document.getElementById("more_menu_button");
+	var more_menu = document.getElementById("more_menu");
+	var more_menu_content = more_menu.children;
 
-var lmenu_abs_button = document.getElementById("abs_menu_link");
-var lmenu_hide_button = document.getElementById("lmenu_hbtn");
-var menu = document.getElementsByClassName("lmenu")[0];
+	var lmenu_abs_button = document.getElementById("abs_menu_link");
+	var lmenu_hide_button = document.getElementById("lmenu_hbtn");
+	var menu = document.getElementsByClassName("lmenu")[0];
 
 
+var content = document.getElementById('content');
+//content.classList.add('freecontent');
+//content.classList.remove('freecontent');
+//console.log(page);
 main_btn.onclick = function(){
 	console.log("hello");
 	var a = main_menu_content[1];
@@ -46,11 +50,13 @@ more_btn.onclick = function(){
 		a.classList.add('list_open_more');
 		if(a.classList.contains('list_closed')){
 			a.classList.remove('list_closed');
+			
 		}
 		more_menu_open = true;
 	}
 	else{
 		a.classList.add('list_closed');
+		
 		if(a.classList.contains('list_open_more')){
 			a.classList.remove('list_open_more');
 		}
@@ -70,9 +76,10 @@ lmenu_hide_button.onclick = function () {
 	}
 
 	else{
+		content.classList.add('freecontent');
 		a.classList.add("lmenu_closed");
 		lmenu_abs_button.style.display = "block";
-		more_menu_open = false;
+		menu_open = false;
 	}
 }
 
@@ -81,13 +88,17 @@ lmenu_abs_button.onclick = function () {
 	var a = menu;
 	if(!menu_open){
 		if(a.classList.contains('lmenu_closed')){
+		content.classList.remove('freecontent');
 		a.classList.remove('lmenu_closed')
+		//menu.classList.remove('')
 		}
 		lmenu_abs_button.style.display = "none";
-		more_menu_open = true;
+		menu_open = true;
 	}
 
 	else{
+
+		content.classList.add('freecontent');
 		a.classList.add("lmenu_closed");
 		lmenu_abs_button.style.display = "block";
 		

@@ -1,12 +1,12 @@
 #content {
+	transition-duration: 0.3s;
+	transition-property: all;
 	#visits_bar {
 		margin: 35px;
 		background-color: white;
 	}
-	.row:nth-child(1) {
-		
+	.row:nth-child(1) {		
 	}
-	
 	.row:nth-child(2) {
 		margin: 35px;
 		color: white;
@@ -19,13 +19,12 @@
 			background-color: rgba(100,100,100, 0.5);
 		}
 	}
-	
 	.row:nth-child(3) {
 		height: 650px;
 		background-color: white;
 		margin: 35px;
 		#involved_team {
-			width: 
+			//width: 
 		}
 		#secondChart {
 			max-height: 450px;
@@ -48,7 +47,11 @@
 		background-color: white;
 		margin: 35px;
 	}
-
+	
+}
+.freecontent#content {
+	//when lmenu hidden
+	margin-left: 0px;
 }
 #progress_bar {
 	.progress {
