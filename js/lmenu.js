@@ -17,6 +17,13 @@ var key_btn = 50;
 	var menu = document.getElementsByClassName("lmenu")[0];
 
 
+
+	//var main_icon = document.getElementsByClassName('key_btn')[0];
+
+
+	var main_arrow = main_btn.childNodes[3];
+	var more_arrow = more_btn.childNodes[3];
+
 var content = document.getElementById('content');
 //content.classList.add('freecontent');
 //content.classList.remove('freecontent');
@@ -27,8 +34,10 @@ main_btn.onclick = function(){
 	if(!main_menu_open){
 		a.style.display = "block";
 		a.classList.add('list_open');
+		main_arrow.classList.add('rotated');
 		if(a.classList.contains('list_closed')){
 			a.classList.remove('list_closed');
+			
 		}
 		main_menu_open = true;
 	}
@@ -36,6 +45,7 @@ main_btn.onclick = function(){
 		a.classList.add('list_closed');
 		if(a.classList.contains('list_open')){
 			a.classList.remove('list_open');
+			main_arrow.classList.remove('rotated');
 		}
 		main_menu_open = false;
 	}
@@ -48,6 +58,8 @@ more_btn.onclick = function(){
 	if(!more_menu_open){
 		a.style.display = "block";
 		a.classList.add('list_open_more');
+
+		more_arrow.classList.add('rotated');
 		if(a.classList.contains('list_closed')){
 			a.classList.remove('list_closed');
 			
@@ -59,6 +71,8 @@ more_btn.onclick = function(){
 		
 		if(a.classList.contains('list_open_more')){
 			a.classList.remove('list_open_more');
+
+			more_arrow.classList.remove('rotated');
 		}
 		more_menu_open = false;
 	}

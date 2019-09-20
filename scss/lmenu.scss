@@ -71,6 +71,18 @@ div.lmenu_closed {
 		&:active {
 			color: red;
 		}
+		span {
+			margin-left: 35px;
+		}
+		.main_icon {
+			margin-left: 135px;
+			transform: rotate(-90deg);
+			transition-property: all;
+			transition-duration: 0.1s;
+		}
+		.rotated {
+				transform: rotate(0deg);
+			}
 	}
 	ul {
 
@@ -110,7 +122,18 @@ div.lmenu_closed {
 		&:active {
 			color: red;
 		}
-
+		span {
+			margin-left: 35px;
+		}
+		.more_icon {
+			transform: rotate(-90deg);
+			margin-left: 135px;
+			transition-property: all;
+			transition-duration: 0.1s;
+		}
+		.rotated {
+				transform: rotate(0deg);
+		}
 	}
 	ul {
 		padding-left: 0px;
@@ -153,9 +176,8 @@ div.lmenu_closed {
 		width: 75px;
 		border-radius: 40px;
 		background-color: red;
-		img {
-			//background-image: url('img/lmenu/user.svg');
-		}
+		overflow: hidden;
+		
 	}
 	#user_name{
 		margin-left: 20px; 
@@ -181,6 +203,10 @@ div.lmenu_closed {
 		height: 100%;
 	}
 	#lmenu_hbtn {
+		//display: flex;
+		//justify-content: center;
+		margin-left: 75px;
+
 		height: 100%;
 		float: right;
 	}
