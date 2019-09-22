@@ -8,6 +8,7 @@
 	justify-content: center;
 	align-items: center;
 }
+
 .pa-settings{
 	height: 40px;
 	border-radius: 25px;
@@ -18,6 +19,10 @@
 	background-color: rgba(0,0,0,0.0);
 	padding-left: 15px;
 	padding-right: 15px;
+}
+.btn_green {
+	color: white;
+	background-color: rgba(87,192,89,1);
 }
 #man_activ_total {
 	color: rgba(244,91,99,1);
