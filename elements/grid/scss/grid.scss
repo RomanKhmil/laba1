@@ -1,0 +1,39 @@
+.search {
+	//height: 75px;
+	//background-color: rgba(33,33,200,0.3);
+	padding: 10px !important;
+}
+.search-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.pa-settings{
+	height: 40px;
+	border-radius: 25px;
+	min-width: 100px;
+	outline: none;
+	cursor: pointer;
+	border: 1px solid rgba(100,100,100,1);
+	background-color: rgba(0,0,0,0.0);
+	padding-left: 15px;
+	padding-right: 15px;
+}
+#man_activ_total {
+	color: rgba(244,91,99,1);
+}
+.total {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.involved-photo {
+	border-radius: 35px;
+	width: 64px;
+	height: 64px;
+	overflow: hidden;
+	embed {
+		width: 64px;
+		height: 64px;
+	}
+}

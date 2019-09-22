@@ -1,100 +1,107 @@
 var ctx = $('#myChart');
 var sctx = $('#secondChart');
-
-
-
-
 var ctx = document.getElementById('myChart').getContext("2d");
-
 var sctx = document.getElementById('secondChart').getContext("2d");
-
-
 var gradientFill = ctx.createLinearGradient(0, 500,  0,100);
-gradientFill.addColorStop(0, "rgba(198, 32, 186, 0.8");
-gradientFill.addColorStop(1, "rgba(253, 179, 38, 0.8)");
-
-
-
+  gradientFill.addColorStop(0, "rgba(198, 32, 186, 0.8");
+  gradientFill.addColorStop(1, "rgba(253, 179, 38, 0.8)");
 var gradientFill2 = ctx.createLinearGradient(0, 500,  0,100);
-gradientFill2.addColorStop(0, "rgba(39, 126, 204, 0.8)");
-gradientFill2.addColorStop(1, "rgba(0, 222, 255, 0.8)");
+  gradientFill2.addColorStop(0, "rgba(39, 126, 204, 0.8)");
+  gradientFill2.addColorStop(1, "rgba(0, 222, 255, 0.8)");
 
 
+var set_data =function(arr,type){
+  let data = {
+    labels: [],
+    datasets: [{
+      label: 'test',
+      data: [],
+      backgroundColor: 'rgba(84,166,222,1)'
+    }]
+  };
+  if(type == 1){
+    for(i = 1;i <= 31 && i <= arr.length;i++){
+      data.datasets[0].data.push(arr[i-1]);
+      data.labels.push(i.toString());
+    }
+    console.log(data);
+    return data;
+  }
 
-
-
-
+}
 
 var myChart = new Chart(ctx, {
-    type: 'line',
-    data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-        datasets: [{
-            //label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor:  gradientFill,
-            borderColor:     'rgba(236, 240, 241,0.8)',
-            borderWidth: 3,
-            radius: 10,
-             //hover
-            pointHoverRadius: 10,
-            pointHoverBorderWidth: 3,
-
-         },{
-            //label: '# of Votes',
-            data: [5, 19, 20, 5, 3, 3],
-            backgroundColor: gradientFill2,
-            borderColor:      'rgba(236, 240, 241,0.8)',
-
-
-
-           //hover
-            pointHoverRadius: 0,
-            pointHoverBorderWidth: 3,
-            //!hover
-            radius: 0,
-            borderWidth: 3
-        }]
-        
+  type: 'line',
+  data: {
+    labels: ['1','1','1','1','1','1','1'],
+    datasets: [{
+      label: 'hello',
+      data:[6,7,5,6,4,7,5],
+      backgroundColor: gradientFill
     },
-    options: {
-        title: {
-            display: false
+    {
+      label: 'world',
+      data: [5,4,5,3,4,2,5],
+      backgroundColor: gradientFill2
+    }],
+  
+  },
+  options: {
+    legend: {
+      display: false
+    },
+    scales: {
+      yAxes: [{
+        gridLines: {
+          display: false
         },
-        lagends: {
-            display: false
-        },
-        scales: {
-            xAxes: [{
-                gridLines: {
-                    color : 'rgba(0,0,0,1)',
-                    lineWidth: 4,
-                    //drawOnChartArea: false
-                }
-            }],
-            yAxes: [{
-                gridLines: {
-                    color : 'rgba(155,255,255,1',
-                    lineWidth: 4
-                }
-            }]
+        ticks: {
+          display: false
         }
+      }]
     }
-    
+  }
+
 });
 var secondChart = new Chart(sctx,{
-    type: 'bar',
-    data: {
-      labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
-      datasets: [
-        {
-          label: "Population (millions)",
-          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
-          data: [2478,5267,734,784,433]
-        }
-      ]
-    },
-    options:{
-
+      type: 'bar',
+  /*  data: {
+      labels: ["0", "1", "2", "3", "4","5","6","7","8"],
+      datasets: [{
+        label: 'hello',
+        data: [115,1,140,100,40,10,40,25,20],
+        backgroundColor: 'rgba(30,30,200,1)'
+      }]
+    },*/
+    
+    data: set_data([15,10,20,5,8,13,100,60,100,102,75,50,105,64,31,50,40,35,25,56,48,10,64,31,50,40,35,25,56,48,10],1),
+    options: {
+      hover: {
+        backgroundColor: 'rgba(0,0,0,1)'
+      },
+      legend: {
+        display: false
+      },
+      scales: {
+        yAxes: [{
+          gridLines: {
+            display: false
+          },
+          ticks: {
+            display: false,
+            backdropColor: 'rgba(255,255,255,0)'
+          }
+        }],
+        xAxes: [{
+          barPercantage: 1.0,
+          categoryPercentage: 0.8,
+          gridLines: {
+            display: false
+          },
+          ticks: {
+            //display: false
+          }
+        }]
+      }
     }
 });

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>grid</title>
+	<link rel="stylesheet" href="css/grid.css">
+	
+	<!-- Chart -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+	<!-- Material design -->
+	 <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <style>
+  	body {
+  		margin: 0px;
+  		font-family: Arial, Helvetica, sans-serif;
+  	}
+  </style>
+</head>
+<body>
+	<div class="mdc-layout-grid search">
+	  <div class="mdc-layout-grid__inner">
+	    <div class="mdc-layout-grid__cell--span-10">
+	    	<div class="mdc-layout-grid__inner">
+	    		<div class="mdc-layout-grid__cell--span-1 search-icon">
+	    			<embed src="../../img/lmenu/icons/specific/Icon Search.svg" type="">
+	    		</div>
+	    		<div class="mdc-layout-grid__cell--span-11">
+	    			
+	    			<div class="mdc-text-field mdc-text-field--fullwidth">
+	    				<input type="text" placeholder="Search ..." class="mdc-text-field__input">
+	    			</div>
+	    			
+	    		</div>
+	    	</div>
+	    </div>
+		<div class="mdc-layout-grid__cell--span-2 search-icon">
+			<div class="mdc-layout-grid__inner">
+				<div class="mdc-layout-grid__cell--span-4 search-icon">
+					<embed src="../../img/lmenu/icons/specific/Icon Setting.svg" type="">
+				</div>
+				<div class="mdc-layout-grid__cell--span-4 search-icon">
+					<embed src="../../img/lmenu/icons/specific/Icon Notification.svg" type="">
+				</div>
+				<div class="mdc-layout-grid__cell--span-4 search-icon">
+					<embed src="../../img/lmenu/icons/specific/Icon Loggin.svg" type="">
+				</div>
+			</div>
+			
+		</div>
+	  </div>
+	
+	<div class="mdc-layout-grid pa">
+		<div class="mdc-layout-grid__inner">
+			<div class="mdc-layout-grid__cell--span-10"><h1>Project activity</h1></div>
+			<div class="mdc-layout-grid__cell--span-2">
+				<div class="mdc-layout-grid__inner">
+					<div class="mdc-layout-grid__cell--span-6">hide</div>
+					<div class="mdc-layout-grid__cell--span-6">close</div>
+				</div>
+			</div>
+		</div>
+		<div class="mdc-layout-grid__inner">
+			<div class="mdc-layout-grid__cell--span-10">
+				<button class="pa-settings">
+					<span>Month</span>
+					<embed src="../../img/lmenu/icons/specific/Icon Arrow.svg" type="">
+				</button>
+				<button class="pa-settings">
+					<span>Range</span>
+					<embed src="../../img/lmenu/icons/specific/Icon Arrow.svg" type="">
+				</button>
+				<button class="pa-settings">
+					<span>last</span>
+					<embed src="../../img/lmenu/icons/specific/Icon Arrow.svg" type="">
+				</button>
+				<button class="pa-settings">
+					<span>current</span>
+					<embed src="../../img/lmenu/icons/specific/Icon Arrow.svg" type="">
+				</button>
+			</div>
+			<div class="mdc-layout-grid__cell--span-2">
+				<button class="pa-settings">
+					<span>Today</span>
+				</button>
+			</div>
+		</div>
+		<div class="mdc-layout-grid__inner">
+			<canvas id="myChart" width="400vw" height="150vw"></canvas>
+		</div>
+	</div>
+	<div class="mdc-layout-grid it_ma">
+		<div class="mdc-layout-grid__inner">
+			<div class="mdc-layout-grid__cell--span-4">
+				<div class="mdc-layout-grid__inner">
+					<div class="mdc-layout-grid__cell--span-10">
+						<h1>Involved Team</h1>
+					</div>
+				</div>
+				<div class="mdc-layout-grid__inner">
+					<div class="mdc-layout-grid__cell">
+						<div class="mdc-layout-grid__inner">
+							<div class="mdc-layout-grid__cell--span-4">
+								<div class="involved-photo">
+									<embed src="../../img/content/user.svg" type="">
+								</div>
+							</div>
+							<div class="mdc-layout-grid__cell--span-8">
+								<div class="mdc-layout-grid__inner">
+									<div class="mdc-layout-grid__cell--span-12">
+										<h3>Jack Williams</h3>
+									</div>
+								</div>
+								<div class="mdc-layout-grid__inner">
+									<div class="mdc-layout-grid__cell--span-12">
+										<h3>UI/UX Designer</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="mdc-layout-grid__inner">
+							<div class="mdc-layout-grid__cell--span-4">
+								<div class="involved-photo">
+									<embed src="../../img/content/user.svg" type="">
+								</div>
+							</div>
+							<div class="mdc-layout-grid__cell--span-8">
+								<div class="mdc-layout-grid__inner">
+									<div class="mdc-layout-grid__cell--span-12">
+										
+									<h3>Kate Beckinsale</h3>
+									</div>
+								</div>
+								<div class="mdc-layout-grid__inner">
+									<div class="mdc-layout-grid__cell--span-12">
+									<h3>Project Manager</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="mdc-layout-grid__inner">
+							<div class="mdc-layout-grid__cell--span-4">
+								<div class="involved-photo">
+									<embed src="../../img/content/user.svg" type="">
+								</div>
+							</div>
+							<div class="mdc-layout-grid__cell--span-8">
+								<div class="mdc-layout-grid__inner">
+									<div class="mdc-layout-grid__cell--span-12">
+										
+									<h3>Mickey Thompson</h3>
+									</div>
+								</div>
+								<div class="mdc-layout-grid__inner">
+									<div class="mdc-layout-grid__cell--span-12">
+										
+									<h3>Developer</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="mdc-layout-grid__inner">
+							<div class="mdc-layout-grid__cell--span-4">
+								<div class="involved-photo">
+									<embed src="../../img/content/user.svg" type="">
+								</div>
+							</div>
+							<div class="mdc-layout-grid__cell--span-8">
+								<div class="mdc-layout-grid__inner">
+									<div class="mdc-layout-grid__cell--span-12">
+										
+										<h3>Brian Deegan</h3>
+									</div>
+								</div>
+								<div class="mdc-layout-grid__inner">
+									<div class="mdc-layout-grid__cell--span-12">
+										
+										<h3>Web Designer</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mdc-layout-grid__cell--span-8">
+				<div class="mdc-layout-grid__inner">
+					<div class="mdc-layout-grid__cell--span-10">
+						<h1>Mangers Activity</h1>
+					</div>
+				</div>
+				<div class="mdc-layout-grid__inner">
+					<div class="mdc-layout-grid__cell--span-8">
+						<button class="pa-settings">
+							<span>February</span>
+							<embed src="../../img/lmenu/icons/specific/Icon Arrow.svg" type="">
+						</button>
+						<button class="pa-settings">
+							<span>Incoming Phone Calls</span>
+							<embed src="../../img/lmenu/icons/specific/Icon Arrow.svg" type="">
+						</button>
+					</div>
+					<div class="mdc-layout-grid__cell--span-4 total">
+						<h2><span>Total: </span><span id = 'man_activ_total'>9999</span></h2>
+					</div>	
+				</div>
+				<div class="mdc-layout-grid__inner">
+					<canvas id="secondChart" width="1200vw" height="350vw"></canvas>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../graph/js/round_bar.js"></script>
+	<script src="../graph/js/graph.js"></script>
+</body>
+</html>

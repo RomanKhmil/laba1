@@ -6,7 +6,11 @@
 @mixin five () {
 	height: 1000px;
 }
-
+a {
+	text-decoration: none;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+}
 img {
 	background-color: white;
 }
