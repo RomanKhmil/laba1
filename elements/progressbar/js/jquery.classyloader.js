@@ -38,13 +38,16 @@
             info_font_color: 'rgba(125, 125, 125, 0.6)',
 
 
-            remove_percantage: false,
-            max_point: 0,
-            current_point: 0,
+            remove_percentage: false,
+            max_point: 1,
+            current_point: 1,
             //------------------
             start: 'left'
         };
-       
+        if(settings.remove_percentage){
+            console.log("hey hey heeeey!");
+            settings.percentage = Math.trunc(settings.current_point/(settings.max_point/100));
+        }
         settings = $.extend({
         }, defaultSettings, settings);
         var r = $(this);
@@ -56,9 +59,9 @@
             var hw = r.width() / 2;
             var hh = r.height() / 2;
             var u = 100;
-            if(settings.remove_percantage){
-                u = settings.max_point;
-            }
+            //(settings.remove_percantage){
+            //    u = settings.max_point;
+            //}
             var a = 0;
             var startPos = 0;
             var f = function(e) {
@@ -111,7 +114,12 @@
                     ctx.textAlign = "center";
                     //percantage font 
                     ctx.textBaseline = "top";
-                    ctx.fillText(a + 1 + "", hw, hh);
+                    if(settings.remove_percentage){
+                        ctx.fillText(settings.current_point + "", hw, hh); 
+                    }
+                    if(!settings.remove_percentage){
+                        ctx.fillText(a + 1 + "", hw, hh);
+                    }
 
 
                     ctx.fillStyle = settings.info_font_color;

@@ -5,9 +5,15 @@
 	<title>grid</title>
 	<link rel="stylesheet" href="css/grid.css">
 	
+
+
 	<!-- Chart -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+		<!-- classyloader -->
+	<script src="../progressbar/js/jquery.classyloader.js">
+		
+	</script>
 	<!-- Material design -->
 	 <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
   <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
@@ -92,7 +98,7 @@
 	</div>
 	<div class="mdc-layout-grid it_ma">
 		<div class="mdc-layout-grid__inner">
-			<div class="mdc-layout-grid__cell--span-4">
+			<div class="mdc-layout-grid__cell--span-4 involved_team">
 				<div class="mdc-layout-grid__inner">
 					<div class="mdc-layout-grid__cell--span-10">
 						<h1>Involved Team</h1>
@@ -100,83 +106,83 @@
 				</div>
 				<div class="mdc-layout-grid__inner">
 					<div class="mdc-layout-grid__cell">
-						<div class="mdc-layout-grid__inner">
+						<div class="mdc-layout-grid__inner it_item">
 							<div class="mdc-layout-grid__cell--span-4">
 								<div class="involved-photo">
 									<embed src="../../img/content/user.svg" type="">
 								</div>
 							</div>
-							<div class="mdc-layout-grid__cell--span-8">
+							<div class="mdc-layout-grid__cell--span-8 user">
 								<div class="mdc-layout-grid__inner">
-									<div class="mdc-layout-grid__cell--span-12">
-										<h3>Jack Williams</h3>
+									<div class="mdc-layout-grid__cell--span-12 name">
+										<span>Jack Williams</span>
 									</div>
 								</div>
 								<div class="mdc-layout-grid__inner">
-									<div class="mdc-layout-grid__cell--span-12">
-										<h3>UI/UX Designer</h3>
+									<div class="mdc-layout-grid__cell--span-12 role">
+										<span>UI/UX Designer</span>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="mdc-layout-grid__inner">
+						<div class="mdc-layout-grid__inner it_item">
 							<div class="mdc-layout-grid__cell--span-4">
 								<div class="involved-photo">
 									<embed src="../../img/content/user.svg" type="">
 								</div>
 							</div>
-							<div class="mdc-layout-grid__cell--span-8">
+							<div class="mdc-layout-grid__cell--span-8 user">
 								<div class="mdc-layout-grid__inner">
-									<div class="mdc-layout-grid__cell--span-12">
+									<div class="mdc-layout-grid__cell--span-12 name">
 										
-									<h3>Kate Beckinsale</h3>
+									<span>Kate Beckinsale</span>
 									</div>
 								</div>
 								<div class="mdc-layout-grid__inner">
-									<div class="mdc-layout-grid__cell--span-12">
-									<h3>Project Manager</h3>
+									<div class="mdc-layout-grid__cell--span-12 role">
+									<span>Project Manager</span>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="mdc-layout-grid__inner">
+						<div class="mdc-layout-grid__inner it_item">
 							<div class="mdc-layout-grid__cell--span-4">
 								<div class="involved-photo">
 									<embed src="../../img/content/user.svg" type="">
 								</div>
 							</div>
-							<div class="mdc-layout-grid__cell--span-8">
+							<div class="mdc-layout-grid__cell--span-8 user">
 								<div class="mdc-layout-grid__inner">
-									<div class="mdc-layout-grid__cell--span-12">
+									<div class="mdc-layout-grid__cell--span-12 name">
 										
-									<h3>Mickey Thompson</h3>
+									<span>Mickey Thompson</span>
 									</div>
 								</div>
 								<div class="mdc-layout-grid__inner">
-									<div class="mdc-layout-grid__cell--span-12">
+									<div class="mdc-layout-grid__cell--span-12 role">
 										
-									<h3>Developer</h3>
+									<span>Developer</span>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="mdc-layout-grid__inner">
+						<div class="mdc-layout-grid__inner it_item">
 							<div class="mdc-layout-grid__cell--span-4">
 								<div class="involved-photo">
 									<embed src="../../img/content/user.svg" type="">
 								</div>
 							</div>
-							<div class="mdc-layout-grid__cell--span-8">
+							<div class="mdc-layout-grid__cell--span-8 user">
 								<div class="mdc-layout-grid__inner">
-									<div class="mdc-layout-grid__cell--span-12">
+									<div class="mdc-layout-grid__cell--span-12 name">
 										
-										<h3>Brian Deegan</h3>
+										<span>Brian Deegan</span>
 									</div>
 								</div>
 								<div class="mdc-layout-grid__inner">
-									<div class="mdc-layout-grid__cell--span-12">
+									<div class="mdc-layout-grid__cell--span-12 role">
 										
-										<h3>Web Designer</h3>
+										<span>Web Designer</span>
 									</div>
 								</div>
 							</div>
@@ -184,7 +190,7 @@
 					</div>
 				</div>
 				<div class="mdc-layout-grid__inner">
-					<div class="mdc-layout-grid__cell">
+					<div class="mdc-layout-grid__cell--span-12 add_it">
 						<button class = "pa-settings btn_green">
 							<span>Add Teammate</span>
 							<embed src="../../img/lmenu/icons/specific/Icon Plus.svg" type="">
@@ -198,7 +204,7 @@
 						<h1>Mangers Activity</h1>
 					</div>
 				</div>
-				<div class="mdc-layout-grid__inner">
+				<div class="mdc-layout-grid__inner supp_bar">
 					<div class="mdc-layout-grid__cell--span-8">
 						<button class="pa-settings">
 							<span>February</span>
@@ -227,7 +233,7 @@
 						<h1>Visits</h1>
 					</div>
 				</div>
-				<div class="mdc-layout-grid__inner">
+				<div class="mdc-layout-grid__inner supp_bar">
 					<div class="mdc-layout-grid__cell--span-8">
 						<button class="pa-settings">
 							<span>Web Page</span>
@@ -241,18 +247,37 @@
 					<div class="mdc-layout-grid__cell--span-4 total">
 						<h2>
 							<span>Conversion: </span>
-							<span id = 'man_activ_total'>99%</span>
+							<span id = 'man_activ_total'>98%</span>
 						</h2>
 					</div>	
 				</div>
-				<div class="mdc-layotu-grid__inner">
-					roll
+				<div class="mdc-layout-grid__inner">
+					<div class="mdc-layout-grid__cell--span-4">
+						<canvas id = "loader" width="300vw" height="300vw">
+							
+						</canvas>
+					</div>
+					<div class="mdc-layout-grid__cell--span-4">
+						<canvas id = "loaderr" width="300vw" height="300vw">
+
+						</canvas>
+					</div>
+					<div class="mdc-layout-grid__cell--span-4">
+						<canvas id = "loaderrr" width="300vw" height="300vw">
+							
+						</canvas>
+					</div>
 				</div>
 			</div>
 			<div class="mdc-layout-grid__cell--span-5">
 				<div class="mdc-layout-grid__inner">
 					<div class="mdc-layout-grid__cell">
 						<h1>Messages</h1>
+					</div>
+				</div>
+				<div class="mdc-layout-grid__inner">
+					<div class="mdc-layout-grid__cell">
+						messanges
 					</div>
 				</div>
 			</div>
@@ -262,22 +287,322 @@
 	</div>
 	<div class="mdc-layout-grid im_ca">
 		<div class="mdc-layout-grid__inner">
-			<div class="mdc-layout-grid__cell--span-5">
+			<div class="mdc-layout-grid__cell--span-5 implementation">
 				<div class="mdc-layout-grid__inner">
 					<div class="mdc-layout-grid__cell">
 						<h1>Implementation</h1>
 					</div>
 				</div>
+				<div class="mdc-layout-grid__inner">
+					<div class="mdc-layout-grid__cell--span-3">
+						<span>Date</span>
+					</div>
+					<div class="mdc-layout-grid__cell--span-7">
+						<span>Description</span>
+					</div>
+					<div class="mdc-layout-grid__cell--span-2">
+						<span>Balance</span>
+					</div>
+				</div>
+				<div class="mdc-layout-grid__inner">
+					<div class="mdc-layout-grid__cell--span-12">
+						<div class="mdc-layout-grid__inner">
+							<div class="mdc-layout-grid__cell--span-3">
+								<div class="mdc-layout-grid__inner">
+									<div class="mdc-layout-grid__cell">
+										16 August
+									</div>
+								</div>
+								<div class="mdc-layout-grid__inner">
+									<div class="mdc-layout-grid__cell">
+										Saturday
+									</div>
+								</div>
+							</div>
+							<div class="mdc-layout-grid__cell--span-7">
+								Purchase of office paper
+							</div>
+							<div class="mdc-layout-grid__cell--span-2">
+								<div class="transaction_value">
+									<span>+234$</span>
+								</div>
+							</div>
+						</div>
+						<div class="mdc-layout-grid__inner">
+							<div class="mdc-layout-grid__cell--span-3">
+								<div class="mdc-layout-grid__inner">
+									<div class="mdc-layout-grid__cell">
+										16 August
+									</div>
+							</div>
+								<div class="mdc-layout-grid__inner">
+									<div class="mdc-layout-grid__cell">
+										Saturday
+									</div>
+								</div>
+							</div>
+							<div class="mdc-layout-grid__cell--span-7">
+								Purchase of office paper
+							</div>
+							<div class="mdc-layout-grid__cell--span-2">
+								<div class="transaction_value">
+									<span>+234$</span>
+								</div>
+							</div>
+						</div>
+						<div class="mdc-layout-grid__inner">
+							<div class="mdc-layout-grid__cell--span-3">
+								
+								<div class="mdc-layout-grid__inner">
+									<div class="mdc-layout-grid__cell">
+										16 August
+									</div>
+								</div>
+								<div class="mdc-layout-grid__inner">
+									<div class="mdc-layout-grid__cell">
+										Saturday
+									</div>
+								</div>
+							</div>
+							<div class="mdc-layout-grid__cell--span-7">
+								Purchase of office paper
+							</div>
+							<div class="mdc-layout-grid__cell--span-2">
+								<div class="transaction_value">
+									<span>+234$</span>
+								</div>
+							</div>
+						</div>
+						<div class="mdc-layout-grid__inner">
+							<div class="mdc-layout-grid__cell--span-3">
+								
+								<div class="mdc-layout-grid__inner">
+									<div class="mdc-layout-grid__cell">
+										16 August
+									</div>
+								</div>
+								<div class="mdc-layout-grid__inner">
+									<div class="mdc-layout-grid__cell">
+										Saturday
+									</div>
+								</div>
+							</div>
+							<div class="mdc-layout-grid__cell--span-7">
+								Purchase of office paper
+							</div>
+							<div class="mdc-layout-grid__cell--span-2">
+								<div class="transaction_value">
+									<span>+234$</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="mdc-layout-grid__cell--span-7">
+			<div class="mdc-layout-grid__cell--span-7 client_activity">
 				<div class="mdc-layout-grid__inner">
 					<div class="mdc-layout-grid__cell">
 						<h1>Client Activity</h1>
 					</div>
 				</div>
+				<div class="mdc-layout-grid__inner">
+					<div class="mdc-layout-grid__cell--span-4">User</div>
+					<div class="mdc-layout-grid__cell--span-1">Visits</div>
+					<div class="mdc-layout-grid__cell--span-2">Purchases</div>
+					<div class="mdc-layout-grid__cell--span-1">Calls</div>
+					<div class="mdc-layout-grid__cell--span-2">Total Profit</div>
+				</div>
+				<div class="mdc-layout-grid__inner">
+					<div class="mdc-layout-grid__cell--span-12">
+						<div class="mdc-layout-grid__inner">
+							<div class="mdc-layout-grid__cell--span-4">
+								<div class="mdc-layout-grid__inner">
+									<div class="mdc-layout-grid__cell--span-2">
+										<div class="photo">
+											photo
+										</div>
+									</div>
+									<div class="mdc-layout-grid__cell--span-10">
+										Angelina Vitale
+									</div>
+								</div>
+							</div>
+							<div class="mdc-layout-grid__cell--span-1">287</div>
+							<div class="mdc-layout-grid__cell--span-2">34</div>
+							<div class="mdc-layout-grid__cell--span-1">52</div>
+							<div class="mdc-layout-grid__cell--span-2">5946$</div>
+						</div>
+						<div class="mdc-layout-grid__inner">
+							<div class="mdc-layout-grid__cell--span-4">
+								<div class="mdc-layout-grid__inner">
+									<div class="mdc-layout-grid__cell--span-2">
+										<div class="photo">
+											photo
+										</div>
+									</div>
+									<div class="mdc-layout-grid__cell--span-10">
+										Angelina Vitale
+									</div>
+								</div>
+							</div>
+							<div class="mdc-layout-grid__cell--span-1">
+								287
+							</div>
+							<div class="mdc-layout-grid__cell--span-2">34</div>
+							<div class="mdc-layout-grid__cell--span-1">52</div>
+							<div class="mdc-layout-grid__cell--span-2">5946$</div>
+						</div>
+						<div class="mdc-layout-grid__inner">
+							<div class="mdc-layout-grid__cell--span-4">
+								<div class="mdc-layout-grid__inner">
+									<div class="mdc-layout-grid__cell--span-2">
+										<div class="photo">
+											photo
+										</div>
+									</div>
+									<div class="mdc-layout-grid__cell--span-10">
+										Angelina Vitale
+									</div>
+								</div>
+							</div>
+							<div class="mdc-layout-grid__cell--span-1">
+								287
+							</div>
+							<div class="mdc-layout-grid__cell--span-2">
+								34
+							</div>
+							<div class="mdc-layout-grid__cell--span-1">
+								52
+							</div>
+							<div class="mdc-layout-grid__cell--span-2">	
+								5946$
+							</div>
+						</div>
+					</div>
+					
+				</div>
 			</div>
 		</div>
 	</div>
+	<div class="mdc-layout-grid mail">
+		<div class="mdc-layout-grid__inner">
+			<div class="mdc-layout-grid__cell--span-12">
+				<div class="mdc-layout-grid__inner">
+					<div class="mdc-layout-grid__cell--span-11">
+						<h1>Mail</h1>
+					</div>
+					<div class="mdc-layout-grid__cell--span-1">
+						
+					</div>
+				</div>
+				<div class="mdc-layout-grid__inner">
+					<div class="mdc-layout-grid__cell--span-2">
+						<div class="mdc-layout-grid__inner">
+							<div class="mdc-layout-grid__cell--span-2">
+								photo
+							</div>
+							<div class="mdc-layout-grid__cell--span-10">
+								<div class="mdc-layout-grid__inner">
+									<div class="mdc-layout-grid__cell--span-12">
+										Jack Williams
+									</div>
+								</div>
+								<div class="mdc-layout-grid__inner">
+									<div class="mdc-layout-grid__cell--span-12">
+										jackwilliams@gmail.com
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mdc-layout-grid__cell--span-10">
+						<div class="mdc-layout-grid__inner">
+							<div class="mdc-layout-grid__cell--span-10">Inbox</div>
+							<div class="mdc-layout-grid__cell--span-2">search</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdc-layout-grid__inner">
+					<div class="mdc-layout-grid__cell--span-2">
+						<div class="mdc-layout-grid__inner">
+							<div class="mdc-layout-grid__cell--span-12">new</div>
+						</div>
+						<div class="mdc-layout-grid__inner">
+							<div class="mdc-layout-grid__cell--span-12">Inbox</div>
+						</div>
+						<div class="mdc-layout-grid__inner">
+							<div class="mdc-layout-grid__cell--span-12">Sent Mail</div>
+						</div>
+						<div class="mdc-layout-grid__inner">
+							<div class="mdc-layout-grid__cell--span-12">Important</div>
+						</div>
+						<div class="mdc-layout-grid__inner">
+							<div class="mdc-layout-grid__cell--span-12">Drafts</div>
+						</div>
+						<div class="mdc-layout-grid__inner">
+							<div class="mdc-layout-grid__cell--span-12">Trash</div>
+						</div>
+					</div>
+					<div class="mdc-layout-grid__cell--span-10">
+						<div class="mdc-layout-grid__inner">
+							<div class="mdc-layout-grid__cell--span-8">all mark more</div>
+							<div class="mdc-layout-grid__cell--span-4">show 1-50 of 471</div>
+						</div>
+						<div class="mdc-layout-grid__inner">
+							<div class="mdc-layout-grid__cell--span-12">
+								<div class="mdc-layout-grid__inner">
+									<div class="mdc-layout-grid__cell--span-2">Youtube</div>
+									<div class="mdc-layout-grid__cell--span-7">New video</div>
+									<div class="mdc-layout-grid__cell--span-1">Sep 19</div>
+								</div>
+								<div class="mdc-layout-grid__inner">
+									<div class="mdc-layout-grid__cell--span-2">Youtube</div>
+									<div class="mdc-layout-grid__cell--span-7">New video</div>
+									<div class="mdc-layout-grid__cell--span-1">Sep 19</div>
+								</div>
+								<div class="mdc-layout-grid__inner">
+									<div class="mdc-layout-grid__cell--span-2">Youtube</div>
+									<div class="mdc-layout-grid__cell--span-7">New video</div>
+									<div class="mdc-layout-grid__cell--span-1">Sep 19</div>
+								</div>
+								<div class="mdc-layout-grid__inner">
+									<div class="mdc-layout-grid__cell--span-2">Youtube</div>
+									<div class="mdc-layout-grid__cell--span-7">New video</div>
+									<div class="mdc-layout-grid__cell--span-1">Sep 19</div>
+								</div>
+								<div class="mdc-layout-grid__inner">
+									<div class="mdc-layout-grid__cell--span-2">Youtube</div>
+									<div class="mdc-layout-grid__cell--span-7">New video</div>
+									<div class="mdc-layout-grid__cell--span-1">Sep 19</div>
+								</div>
+								<div class="mdc-layout-grid__inner">
+									<div class="mdc-layout-grid__cell--span-2">Youtube</div>
+									<div class="mdc-layout-grid__cell--span-7">New video</div>
+									<div class="mdc-layout-grid__cell--span-1">Sep 19</div>
+								</div>
+								<div class="mdc-layout-grid__inner">
+									<div class="mdc-layout-grid__cell--span-2">Youtube</div>
+									<div class="mdc-layout-grid__cell--span-7">New video</div>
+									<div class="mdc-layout-grid__cell--span-1">Sep 19</div>
+								</div>
+								<div class="mdc-layout-grid__inner">
+									<div class="mdc-layout-grid__cell--span-2">Youtube</div>
+									<div class="mdc-layout-grid__cell--span-7">New video</div>
+									<div class="mdc-layout-grid__cell--span-1">Sep 19</div>
+								</div>
+								<div class="mdc-layout-grid__inner">
+									<div class="mdc-layout-grid__cell--span-2">Youtube</div>
+									<div class="mdc-layout-grid__cell--span-7">New video</div>
+									<div class="mdc-layout-grid__cell--span-1">Sep 19</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../progressbar/js/progress.js"></script>
 	<script src="../graph/js/round_bar.js"></script>
 	<script src="../graph/js/graph.js"></script>
 </body>

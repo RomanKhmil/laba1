@@ -32,13 +32,64 @@
 	justify-content: center;
 	align-items: center;
 }
-.involved-photo {
-	border-radius: 35px;
-	width: 64px;
-	height: 64px;
-	overflow: hidden;
-	embed {
+
+
+.involved_team {
+
+	.involved-photo {
+		border-radius: 35px;
 		width: 64px;
 		height: 64px;
+		overflow: hidden;
+		embed {
+			width: 64px;
+			height: 64px;
+		}
+	}
+	.it_item {
+		margin-bottom: 15px;
+		.user {
+		margin-top: auto;
+		margin-bottom: auto;
+			.role {
+				color: rgb(165,166,187);
+				font-size: 14pt;
+			}
+			.name {
+				font-size: 18pt;
+				font-weight: 550;
+				color: rgb(81,89,116);
+			}
+		}
+	}
+	.add_it {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+}
+.supp_bar {
+	div {	
+		margin-bottom: auto;
+		margin-top: auto;
+	}
+}
+.implementation {
+	color: rgb(81,89,116);
+	.mdc-layout-grid__inner {
+		margin-bottom: 10px!important;
+	}
+	.transaction_value {
+		height: 40px;
+		min-width: 55px;
+		background-color: rgb(87,192,89);
+		color: rgb(242,246,252);
+		//padding:auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 35px;
+		font-size: 14pt;
+		font-weight: 500;
 	}
 }
