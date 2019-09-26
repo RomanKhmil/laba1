@@ -1,0 +1,39 @@
+body {
+
+}
+#content {
+
+	.mail-message {
+		input {
+			width: 20px;
+			height: 20px;
+		}
+			.star {
+				opacity: 0.2;
+			}
+			.fpiece {
+				display: flex;
+				align-items: center;
+			}
+			//display: flex;
+			.title {
+				height: 100%;
+				display: flex;
+				align-items: center;
+			}
+			.date {
+				height: 100%;
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+			}
+	}
+	.stared {
+		.star {
+			opacity: 1;
+		}
+	}
+	.unreaded {
+		font-weight: 700;
+	}
+}

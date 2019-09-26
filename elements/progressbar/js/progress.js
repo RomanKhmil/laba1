@@ -64,8 +64,8 @@ $(document).ready(function() {
 		info_font_color: 'rgba(186,187,204,1)',
 		remove_percentage: true,
 		info_text: "Views",
-		max_point: 10000,
-		current_point: 9000
+		max_point: 6000,
+		current_point: 4782
 	});
 	$('#loaderr').ClassyLoader({
 		width: 300,// width of the loader in pixels
@@ -105,8 +105,8 @@ $(document).ready(function() {
 		info_font_size: '25px',
 		info_font_color: 'rgba(186,187,204,1)',
 		remove_percentage: true,
-		max_point: 10000,
-		current_point: 9000
+		max_point: 2000,
+		current_point: 1263
 	});
 
 	$('#loaderrr').ClassyLoader({
@@ -149,8 +149,8 @@ $(document).ready(function() {
 		info_font_size: '25px',
 		info_font_color: 'rgba(186,187,204,1)',
 		remove_percentage: true,
-		max_point: 10000,
-		current_point: 9000
+		max_point: 1000,
+		current_point: 394
 
 	});
 

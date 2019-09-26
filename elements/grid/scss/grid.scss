@@ -1,4 +1,6 @@
 #content {
+    color: rgb(81, 89, 116);
+
     .shadowed {
         padding: 5px;
         -webkit-box-shadow: 0px 11px 6px -5px rgba(0, 0, 0, 0.15);
@@ -12,6 +14,11 @@
             margin-top: auto;
         }
     }
+
+    select::-ms-expand {
+        display: none !important;
+    }
+
 
     .title {
         div:nth-child(2) {
@@ -58,10 +65,12 @@
             align-items: center;
         }
     }
-	//this is for all selects and buttons
+
+    //this is for all selects and buttons
     .pa-settings {
         height: 40px;
         border-radius: 25px;
+        font-size: 14pt;
         min-width: 100px;
         outline: none;
         cursor: pointer;
@@ -70,21 +79,23 @@
         padding-left: 15px;
         padding-right: 15px;
     }
-	
-	select{
-		border: 3px solid rgba(165,166,187,0.8);
-		color: rgb(81,89,116);
-		&.type-red {
-			color: white;
-			border: none;
-			background-color: rgb(255,91,99);
-		}
-		&.type-blue {
-			color: white;
-			border: none;
-			background-color: rgb(84,166,222);
-		}
-	}
+
+    select {
+        border: 3px solid rgba(165, 166, 187, 0.8);
+        color: rgb(81, 89, 116);
+
+        &.type-red {
+            color: white;
+            border: none;
+            background-color: rgb(255, 91, 99);
+        }
+
+        &.type-blue {
+            color: white;
+            border: none;
+            background-color: rgb(84, 166, 222);
+        }
+    }
 
     #man_activ_total {
         color: rgba(244, 91, 99, 1);
@@ -136,11 +147,76 @@
         }
     }
 
+    .messages {
+        .icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .you {
+            //float: right;
+            justify-content: flex-start !important;
+
+            .text {
+                color: rgb(81, 89, 116);
+                background-color: rgb(225, 231, 240);
+            }
+        }
+
+        .oponent {
+            .text {
+                color: white;
+                background-color: rgb(87, 192, 89);
+            }
+        }
+
+        .message-container {
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+
+        .messages-message {
+            display: flex;
+            font-size: 14pt;
+
+            .text {
+                width: calc(100% - 60px);
+                font-weight: 100;
+                border-radius: 5px;
+                margin-right: 15px;
+                margin-left: 15px;
+                padding: 10px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+        }
+
+        .date {
+            color: rgb(165, 166, 187);
+            margin-top: 5px;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 20px;
+        }
+    }
+
     .implementation {
+        font-size: 14pt;
         color: rgb(81, 89, 116);
         padding-bottom: 20px;
 
-        .data-type {}
+        .data-type {
+            font-size: 14pt;
+            color: rgb(170, 171, 191);
+        }
 
         .data-row {
             font-size: 14pt;
@@ -159,6 +235,10 @@
                         color: rgb(81, 89, 116);
                     }
 
+                }
+
+                .implementation-day {
+                    color: rgb(170, 171, 191);
                 }
             }
 
@@ -204,6 +284,8 @@
     }
 
     .client_activity {
+        font-size: 14pt;
+
         .ca-row {
             margin-bottom: 10px;
 
@@ -220,6 +302,11 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                img {
+                    //width: 100%;
+                    height: 100%
+                }
             }
 
             .ca-name {
@@ -234,10 +321,11 @@
                 color: rgb(81, 183, 72);
             }
         }
-
     }
 
     .mail {
+        font-size: 14pt;
+
         .photo {
             //margin-right: 15px!important;
             border-radius: 45px;
@@ -248,6 +336,20 @@
             img {
                 width: 100%;
             }
+        }
+
+        select {
+            outline: none;
+            border: none;
+            font-size: 14pt;
+        }
+
+        input {
+            font-size: 14pt;
+        }
+
+        label {
+            font-size: 14pt;
         }
 
         .mail-new-bar {
@@ -274,7 +376,18 @@
         }
 
         .mail-inbox {
+            height: 100%;
+
+            .title {
+                margin-left: 15px;
+            }
+
+            .supp_bar {
+                height: 100%;
+            }
+
             div {
+
                 margin-top: auto;
                 margin-bottom: auto;
                 font-size: 22pt;
@@ -322,6 +435,83 @@
         .mail-link:hover {
             margin-left: 12px;
             border-left: 3px solid rgb(244, 91, 99);
+        }
+
+        .mail-labels {
+            font-size: 14pt;
+
+            ul {
+                li {
+                    display: block;
+                }
+            }
+        }
+
+        .searchbar {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            height: 30px;
+            padding-left: 20px;
+            width: 280px;
+
+            border-radius: 60px;
+            background-color: rgba(255, 255, 255, 0.2);
+            display: flex;
+
+
+            input {
+                color: white;
+                outline: 0;
+                height: 100%;
+                margin-left: 15px;
+                border: 0px;
+                background-color: rgba(0, 0, 0, 0);
+
+                &::placeholder {
+                    color: white;
+                }
+            }
+        }
+
+        .mail-message {
+            input {
+                width: 20px;
+                height: 20px;
+            }
+
+            .star {
+                opacity: 0.2;
+            }
+
+            .fpiece {
+                display: flex;
+                align-items: center;
+            }
+
+            //display: flex;
+            .title {
+                height: 100%;
+                display: flex;
+                align-items: center;
+            }
+
+            .date {
+                height: 100%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+        }
+
+        .stared {
+            .star {
+                opacity: 1;
+            }
+        }
+
+        .unreaded {
+            font-weight: 700;
         }
     }
 }
