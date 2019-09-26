@@ -184,7 +184,10 @@ div.lmenu_closed {
 		border-radius: 40px;
 		background-color: red;
 		overflow: hidden;
-		
+		img {
+			width: 100%;
+			
+		}
 	}
 	#user_name{
 		margin-left: 20px; 
