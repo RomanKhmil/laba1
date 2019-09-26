@@ -69,14 +69,6 @@ var myChart = new Chart(ctx, {
                 ticks: {
                     display: false
                 }
-            }],
-            xAxes: [{
-                gridLines: {
-                    display: false
-                },
-                ticks: {
-                    display: false
-                }
             }]
         }
     }
