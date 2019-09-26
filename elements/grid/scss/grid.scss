@@ -1,95 +1,327 @@
-.search {
-	//height: 75px;
-	//background-color: rgba(33,33,200,0.3);
-	padding: 10px !important;
-}
-.search-icon {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
+#content {
+    .shadowed {
+        padding: 5px;
+        -webkit-box-shadow: 0px 11px 6px -5px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 0px 11px 6px -5px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 11px 6px -5px rgba(0, 0, 0, 0.15);
+    }
 
-.pa-settings{
-	height: 40px;
-	border-radius: 25px;
-	min-width: 100px;
-	outline: none;
-	cursor: pointer;
-	border: 1px solid rgba(100,100,100,1);
-	background-color: rgba(0,0,0,0.0);
-	padding-left: 15px;
-	padding-right: 15px;
-}
-.btn_green {
-	color: white;
-	background-color: rgba(87,192,89,1);
-}
-#man_activ_total {
-	color: rgba(244,91,99,1);
-}
-.total {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
+    .supp_bar {
+        div {
+            margin-bottom: auto;
+            margin-top: auto;
+        }
+    }
 
+    .title {
+        div:nth-child(2) {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
 
-.involved_team {
+        .open_close {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
 
-	.involved-photo {
-		border-radius: 35px;
-		width: 64px;
-		height: 64px;
-		overflow: hidden;
-		embed {
-			width: 64px;
-			height: 64px;
-		}
-	}
-	.it_item {
-		margin-bottom: 15px;
-		.user {
-		margin-top: auto;
-		margin-bottom: auto;
-			.role {
-				color: rgb(165,166,187);
-				font-size: 14pt;
-			}
-			.name {
-				font-size: 18pt;
-				font-weight: 550;
-				color: rgb(81,89,116);
-			}
-		}
-	}
-	.add_it {
-		margin-left: auto;
-		margin-right: auto;
-	}
+            i {
+                margin-left: 10px;
+            }
+
+            i:nth-child(2) {
+                //margin-right: 15px;
+            }
+        }
+    }
+
+    #content-add-teammate {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0;
+        color: white;
+        background-color: rgba(87, 192, 89, 1);
+
+        span {
+            margin-right: 5px;
+        }
+    }
+
+    .search {
+        //height: 75px;
+        //background-color: rgba(33,33,200,0.3);
+        padding: 10px !important;
+
+        .search-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+	//this is for all selects and buttons
+    .pa-settings {
+        height: 40px;
+        border-radius: 25px;
+        min-width: 100px;
+        outline: none;
+        cursor: pointer;
+        border: 1px solid rgba(100, 100, 100, 1);
+        background-color: rgba(0, 0, 0, 0.0);
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 	
-}
-.supp_bar {
-	div {	
-		margin-bottom: auto;
-		margin-top: auto;
+	select{
+		border: 3px solid rgba(165,166,187,0.8);
+		color: rgb(81,89,116);
+		&.type-red {
+			color: white;
+			border: none;
+			background-color: rgb(255,91,99);
+		}
+		&.type-blue {
+			color: white;
+			border: none;
+			background-color: rgb(84,166,222);
+		}
 	}
-}
-.implementation {
-	color: rgb(81,89,116);
-	.mdc-layout-grid__inner {
-		margin-bottom: 10px!important;
-	}
-	.transaction_value {
-		height: 40px;
-		min-width: 55px;
-		background-color: rgb(87,192,89);
-		color: rgb(242,246,252);
-		//padding:auto;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		border-radius: 35px;
-		font-size: 14pt;
-		font-weight: 500;
-	}
+
+    #man_activ_total {
+        color: rgba(244, 91, 99, 1);
+    }
+
+    .total {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .involved_team {
+
+        .involved-photo {
+            border-radius: 45px;
+            width: 90px;
+            height: 90px;
+            overflow: hidden;
+
+            embed {
+                width: 64px;
+                height: 64px;
+            }
+        }
+
+        .it_item {
+            margin-bottom: 15px;
+
+            .user {
+                margin-top: auto;
+                margin-bottom: auto;
+
+                .role {
+                    color: rgb(165, 166, 187);
+                    font-size: 14pt;
+                }
+
+                .name {
+                    font-size: 18pt;
+                    font-weight: 550;
+                    color: rgb(81, 89, 116);
+                }
+            }
+        }
+
+        .add_it {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .implementation {
+        color: rgb(81, 89, 116);
+        padding-bottom: 20px;
+
+        .data-type {}
+
+        .data-row {
+            font-size: 14pt;
+            margin-top: 15px;
+
+            div {
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+
+            .date {
+                div:nth-child(1) {
+                    div:nth-child(1) {
+                        font-size: 18pt;
+                        font-weight: 600;
+                        color: rgb(81, 89, 116);
+                    }
+
+                }
+            }
+
+            .description {
+                font-size: 18pt;
+                font-weight: 600;
+                color: rgb(81, 89, 116);
+            }
+
+            .balance {
+                .transaction_value {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0;
+
+                    height: 50px;
+
+
+                    span {
+                        display: block;
+                        margin-top: 0px;
+                    }
+
+                    text-align: center;
+                    border-radius: 35px;
+                    font-size: 16pt;
+                    font-weight: 500;
+                    color: rgb(242, 246, 252);
+
+                }
+
+                .positive {
+                    background-color: rgb(87, 192, 89);
+
+                }
+
+                .negative {
+                    background-color: rgb(255, 91, 99);
+                }
+            }
+        }
+    }
+
+    .client_activity {
+        .ca-row {
+            margin-bottom: 10px;
+
+            div {
+                margin-bottom: auto;
+                margin-top: auto;
+            }
+
+            .photo {
+                border-radius: 45px;
+                width: 90px;
+                height: 90px;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .ca-name {
+                font-size: 18pt;
+                font-weight: 600;
+                color: rgb(81, 89, 116);
+            }
+
+            .ca-profit {
+                font-size: 18pt;
+                font-weight: 600;
+                color: rgb(81, 183, 72);
+            }
+        }
+
+    }
+
+    .mail {
+        .photo {
+            //margin-right: 15px!important;
+            border-radius: 45px;
+            overflow: hidden;
+            width: 80px;
+            height: 80px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .mail-new-bar {
+            padding: 10px;
+
+            .mail-new {
+                margin: auto;
+                //text-align: center;
+                width: 230px;
+                height: 50px;
+                background-color: rgb(244, 91, 99);
+                color: white;
+                border-radius: 35px;
+
+                span {
+                    font-weight: 600;
+                    font-size: 14pt;
+                    position: relative;
+                    left: calc(50% - 15px);
+                    top: 15px;
+                    //transform: translate(-50%, -50%);
+                }
+            }
+        }
+
+        .mail-inbox {
+            div {
+                margin-top: auto;
+                margin-bottom: auto;
+                font-size: 22pt;
+                font-weight: 550;
+            }
+
+            color: white;
+            margin-left: -15px;
+            background-color: rgb(87, 192, 89);
+        }
+
+        .mail-user {
+            font-size: 14pt;
+
+            div {
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+
+            .mail-user-name {
+                font-weight: 600;
+                font-size: 16pt;
+            }
+
+            background-color: rgb(84, 166, 222);
+            padding: 10px;
+            color: white;
+        }
+
+        .unread {
+
+            background-color: rgb(244, 91, 99);
+            overflow: hidden;
+            border-radius: 15px;
+        }
+
+        .mail-link {
+            display: flex;
+            //justify-content: center;
+            align-items: center;
+            margin-left: 15px;
+
+        }
+
+        .mail-link:hover {
+            margin-left: 12px;
+            border-left: 3px solid rgb(244, 91, 99);
+        }
+    }
 }
