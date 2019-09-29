@@ -44,7 +44,7 @@ body {
 #content{
 	float: left;
 	@include five();
-	background-color: rgba(242,246,252,1);
+	//background-color: rgba(242,246,252,1);
 	width: calc(100% - 270px);
 	margin-left: 250px;
 }
