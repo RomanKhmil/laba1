@@ -22,8 +22,34 @@
 </head>
 
 <body>
-    <div id="abs_menu_link">
-        <i class="icon-menu"></i>
+    <div id = "hidden_lmenu_links">
+        <span>
+            <i type = "link" class="icon-menu" id="abs_menu_link"></i>
+        </span>
+        <a href="#">
+        <i type = "link" class="icon-home"></i></a>
+        <a href="#">
+        <i type = "link" class="icon-project"></i></a>
+        <a href="#">
+        <i type = "link" class="icon-messages"></i></a>
+        <a href="#">
+        <i type = "link" class="icon-analytics"></i></a>
+        <a href="#">
+        <i type = "link" class="icon-tasks"></i></a>
+        <a href="#">
+        <i type = "link" class="icon-calendar"></i></a>
+        <a href="#">
+        <i type = "link" class="icon-layots"></i></a>
+        <a href="#">
+        <i type = "link" class="icon-accounts"></i></a>
+        <a href="#">
+        <i type = "link" class="icon-payments"></i></a>
+        <a href="#">
+        <i type = "link" class="icon-directory"></i></a>
+        <a href="#">
+        <i type = "link" class="icon-library"></i></a>
+        <a href="#">
+        <i type = "link" class="icon-help"></i></a>
     </div>
     <div class="lmenu">
         <div class="l_a_rd">
@@ -128,7 +154,7 @@
                 </div>
             </div>
             <div class="mdc-layout-grid pa shadowed">
-                <div class="mdc-layout-grid__inner title">
+                <div class="mdc-layout-grid__inner title padded light_bordered">
                     <div class="mdc-layout-grid__cell--span-10">
                         <h1>Project activity</h1>
                     </div>
@@ -139,7 +165,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__inner padded padded-top padded-bottom">
                     <div class="mdc-layout-grid__cell--span-10">
                         <select class="pa-settings ">
                             <option value="1">Month</option>
@@ -160,10 +186,13 @@
                         </button>
                     </div>
                 </div>
-                <div class="mdc-layout-grid__inner">
-                    <canvas id="myChart" width="400vw" height="150vw"></canvas>
+                <div class="mdc-layout-grid__inner padded ">
+                    <div class="mdc-layout-grid__cell--span-12">
+                        <canvas id="myChart" width="400vw" height="150vw"></canvas>
+                    </div>
+                    
                 </div>
-                <div class="mdc-layout-grid__inner pa-ticks">
+                <div class="mdc-layout-grid__inner pa-ticks padded-bottom">
                     <div class="mdc-layout-grid__cell--span-2">
                         <div class="mdc-layout-grid__inner">
                             <div class="mdc-layout-grid__cell--span-12">
@@ -241,7 +270,7 @@
             <div class="mdc-layout-grid it_ma">
                 <div class="mdc-layout-grid__inner">
                     <div class="mdc-layout-grid__cell--span-4 involved_team shadowed">
-                        <div class="mdc-layout-grid__inner title">
+                        <div class="mdc-layout-grid__inner title padded light_bordered">
                             <div class="mdc-layout-grid__cell--span-8">
                                 <h1>Involved Team</h1>
                             </div>
@@ -252,7 +281,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="mdc-layout-grid__inner">
+                        <div class="mdc-layout-grid__inner padded padded-top">
                             <div class="mdc-layout-grid__cell">
                                 <div class="mdc-layout-grid__inner it_item">
                                     <div class="mdc-layout-grid__cell--span-4">
@@ -332,7 +361,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="mdc-layout-grid__inner">
+                        <div class="mdc-layout-grid__inner padded padded-bottom">
                             <div class="mdc-layout-grid__cell--span-12 add_it">
                                 <button class="pa-settings" id="content-add-teammate">
                                     <span>Add Teammate</span>
@@ -342,7 +371,7 @@
                         </div>
                     </div>
                     <div class="mdc-layout-grid__cell--span-8 shadowed">
-                        <div class="mdc-layout-grid__inner title">
+                        <div class="mdc-layout-grid__inner title padded light_bordered">
                             <div class="mdc-layout-grid__cell--span-10">
                                 <h1>Mangers Activity</h1>
                             </div>
@@ -353,7 +382,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="mdc-layout-grid__inner supp_bar">
+                        <div class="mdc-layout-grid__inner supp_bar padded">
                             <div class="mdc-layout-grid__cell--span-8">
                                 <select class="pa-settings" name="" id="">
                                     <option value="1">February</option>
@@ -366,7 +395,7 @@
                                 <h2><span>Total: </span><span id='man_activ_total'>9999</span></h2>
                             </div>
                         </div>
-                        <div class="mdc-layout-grid__inner">
+                        <div class="mdc-layout-grid__inner padded">
                             <canvas id="secondChart" width="1200vw" height="400vw"></canvas>
                         </div>
                     </div>
@@ -375,7 +404,7 @@
             <div class="mdc-layout-grid vs_me">
                 <div class="mdc-layout-grid__inner">
                     <div class="mdc-layout-grid__cell--span-8 shadowed">
-                        <div class="mdc-layout-grid__inner title">
+                        <div class="mdc-layout-grid__inner title padded light_bordered">
                             <div class="mdc-layout-grid__cell--span-8">
                                 <h1>Visits</h1>
                             </div>
@@ -386,7 +415,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="mdc-layout-grid__inner supp_bar">
+                        <div class="mdc-layout-grid__inner supp_bar padded ">
                             <div class="mdc-layout-grid__cell--span-8">
                                 <select class="pa-settings" name="" id="">
                                     <option value="2">Web Page</option>
@@ -402,7 +431,7 @@
                                 </h2>
                             </div>
                         </div>
-                        <div class="mdc-layout-grid__inner">
+                        <div class="mdc-layout-grid__inner padded">
                             <div class="mdc-layout-grid__cell--span-4">
                                 <canvas id="loader" width="300vw" height="300vw">
                                 </canvas>
@@ -418,7 +447,7 @@
                         </div>
                     </div>
                     <div class="mdc-layout-grid__cell--span-4 messages shadowed">
-                        <div class="mdc-layout-grid__inner title">
+                        <div class="mdc-layout-grid__inner title padded light_bordered">
                             <div class="mdc-layout-grid__cell--span-8">
                                 <h1>Messages</h1>
                             </div>
@@ -429,7 +458,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="mdc-layout-grid__inner">
+                        <div class="mdc-layout-grid__inner padded">
                             <div class="mdc-layout-grid__cell--span-12">
                                 <div class="mdc-layout-grid__inner message-container">
                                     <div class="mdc-layout-grid__cell--span-12">
@@ -481,7 +510,7 @@
             <div class="mdc-layout-grid im_ca">
                 <div class="mdc-layout-grid__inner">
                     <div class="mdc-layout-grid__cell--span-5 implementation shadowed">
-                        <div class="mdc-layout-grid__inner title">
+                        <div class="mdc-layout-grid__inner title padded light_bordered">
                             <div class="mdc-layout-grid__cell--span-8">
                                 <h1>Implementation</h1>
                             </div>
@@ -492,7 +521,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="mdc-layout-grid__inner data-type">
+                        <div class="mdc-layout-grid__inner data-type padded gray_text padded-top">
                             <div class="mdc-layout-grid__cell--span-3">
                                 <span>Date</span>
                             </div>
@@ -503,7 +532,7 @@
                                 <span>Balance</span>
                             </div>
                         </div>
-                        <div class="mdc-layout-grid__inner">
+                        <div class="mdc-layout-grid__inner padded">
                             <div class="mdc-layout-grid__cell--span-12">
                                 <div class="mdc-layout-grid__inner data-row">
                                     <div class="mdc-layout-grid__cell--span-3 date">
@@ -597,7 +626,7 @@
                         </div>
                     </div>
                     <div class="mdc-layout-grid__cell--span-7 client_activity shadowed">
-                        <div class="mdc-layout-grid__inner title">
+                        <div class="mdc-layout-grid__inner title padded light_bordered">
                             <div class="mdc-layout-grid__cell--span-8">
                                 <h1>Client Activity</h1>
                             </div>
@@ -608,14 +637,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="mdc-layout-grid__inner">
+                        <div class="mdc-layout-grid__inner padded gray_text padded-top">
                             <div class="mdc-layout-grid__cell--span-6">User</div>
                             <div class="mdc-layout-grid__cell--span-1">Visits</div>
                             <div class="mdc-layout-grid__cell--span-2">Purchases</div>
                             <div class="mdc-layout-grid__cell--span-1">Calls</div>
                             <div class="mdc-layout-grid__cell--span-2">Total Profit</div>
                         </div>
-                        <div class="mdc-layout-grid__inner">
+                        <div class="mdc-layout-grid__inner padded">
                             <div class="mdc-layout-grid__cell--span-12">
                                 <div class="mdc-layout-grid__inner ca-row">
                                     <div class="mdc-layout-grid__cell--span-6">
@@ -679,7 +708,7 @@
             <div class="mdc-layout-grid mail shadowed">
                 <div class="mdc-layout-grid__inner">
                     <div class="mdc-layout-grid__cell--span-12">
-                        <div class="mdc-layout-grid__inner title">
+                        <div class="mdc-layout-grid__inner title padded">
                             <div class="mdc-layout-grid__cell--span-10">
                                 <h1>Mail</h1>
                             </div>
@@ -778,10 +807,12 @@
                                         <div class="title">
                                             Lables
                                         </div>
-                                        <ul>
-                                            <li><span>work</span></li>
-                                            <li><span>work</span></li>
-                                            <li><span>work</span></li>
+                                        <ul class="mail-labels">
+                                            <li >
+                                                <div><i class="icon-labels-blue"></i><span>work</span></div>
+                                            </li>
+                                            <li><div><i class="icon-labels-green"></i><span>work</span></div></li>
+                                            <li><div><i class="icon-labels-red"></i><span>work</span></div></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -817,7 +848,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="mdc-layout-grid">
+                                <div class="mdc-layout-grid" id="mail_messages_box">
                                     <div class="mdc-layout-grid__inner mail-message unreaded stared">
                                         <div class="mdc-layout-grid__cell--span-3">
                                             <div class="fpiece">
@@ -1053,6 +1084,8 @@
         <script src="elements/progressbar/js/progress.js"></script>
         <script src="elements/graph/js/round_bar.js"></script>
         <script src="elements/graph/js/graph.js"></script>
+        <script src="js/mail_select.js"></script>
+        <script src="js/tab_close.js"></script>
     </div>
     <script src="js/lmenu.js"></script>
     <!--

@@ -4,5 +4,6 @@
 }
 .freecontent#content {
 	//when lmenu hidden
-	margin-left: 0px;
+	margin-left: 55px;
+	width: calc(100% - 55px);
 }
